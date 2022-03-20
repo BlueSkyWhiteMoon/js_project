@@ -8,3 +8,10 @@ closedFace.addEventListener('click', () => {
         closedFace.classList.remove('active');
     }
 });
+
+openFace.addEventListener('click', () => {
+    if(closedFace.classList.contains('closed')){
+        closedFace.classList.add('active');
+        openFace.classList.remove('active');
+    }
+});
